@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* Hide radio buttons */
+        input[type="radio"] {
+            display: none;
+        }
+
+        /* Hide all items */
+        .gallery-item {
+            display: none;
+        }
+
+        /* Show all */
+        #all:checked ~ .gallery .gallery-item {
+            display: block;
+        }
+
+        /* Category filters */
+        #traditional:checked ~ .gallery .traditional {
+            display: block;
+        }
+
+        #innovation:checked ~ .gallery .innovation {
+            display: block;
+        }
+
+        #ninad:checked ~ .gallery .ninad {
+            display: block;
+        }
+
+        #technova:checked ~ .gallery .technova {
+            display: block;
+        }
+
+        #fort:checked ~ .gallery .fort {
+            display: block;
+        }
+
+        #seminar:checked ~ .gallery .seminar {
+            display: block;
+        }
+
+        /* Active button highlight */
+        input#all:checked ~ .buttons label[for="all"],
+        input#traditional:checked ~ .buttons label[for="traditional"],
+        input#innovation:checked ~ .buttons label[for="innovation"],
+        input#ninad:checked ~ .buttons label[for="ninad"],
+        input#technova:checked ~ .buttons label[for="technova"],
+        input#fort:checked ~ .buttons label[for="fort"],
+        input#seminar:checked ~ .buttons label[for="seminar"] {
+            background-color: #0d6efd;
+            color: white;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+
+    <div class="container mt-5 mb-5">
+        <h1 class="text-center fw-bold mb-4">College Gallery</h1>
+
+        <!-- ✅ RADIO INPUTS (must be here for CSS to work) -->
+        <input type="radio" name="filter" id="all" checked>
+        <input type="radio" name="filter" id="traditional">
+        <input type="radio" name="filter" id="innovation">
+        <input type="radio" name="filter" id="ninad">
+        <input type="radio" name="filter" id="technova">
+        <input type="radio" name="filter" id="fort">
+        <input type="radio" name="filter" id="seminar">
+
+        <!-- ✅ BUTTONS -->
+        <div class="text-center mb-4 buttons">
+            <label class="btn btn-outline-primary m-1" for="all">All</label>
+            <label class="btn btn-outline-primary m-1" for="traditional">Traditional Day</label>
+            <label class="btn btn-outline-primary m-1" for="innovation">Innovation</label>
+            <label class="btn btn-outline-primary m-1" for="ninad">Ninad-2025</label>
+            <label class="btn btn-outline-primary m-1" for="technova">Technova</label>
+            <label class="btn btn-outline-primary m-1" for="fort">Sindudurg Fort</label>
+            <label class="btn btn-outline-primary m-1" for="seminar">Seminar</label>
+        </div>
+
+        <!-- ✅ GALLERY -->
+        <section class="gallery d-flex flex-wrap justify-content-center mt-4">
+
+            <!-- Traditional -->
+            <img src="gallery/gallery_img/1.jpeg" class="gallery-item traditional rounded-4 m-2" width="300" height="300">
+            <img src="gallery/gallery_img/2.jpeg" class="gallery-item traditional rounded-4 m-2" width="300" height="300">
+            <img src="gallery/gallery_img/3.jpeg" class="gallery-item traditional rounded-4 m-2" width="300" height="300">
+            <img src="gallery/gallery_img/5.jpeg" class="gallery-item traditional rounded-4 m-2" width="300" height="300">
+            <img src="gallery/gallery_img/7.jpeg" class="gallery-item traditional rounded-4 m-2" width="300" height="300">
+            <img src="gallery/gallery_img/28.jpeg" class="gallery-item traditional rounded-4 m-2" width="300" height="300">
+            <img src="gallery/gallery_img/29.jpeg" class="gallery-item traditional rounded-4 m-2" width="300" height="300">
+            <img src="gallery/gallery_img/30.jpeg" class="gallery-item traditional rounded-4 m-2" width="300" height="300">
+
+            <video class="gallery-item traditional rounded-4 m-2" width="300" height="300" controls>
+                <source src="gallery/videos/2.mp4" type="video/mp4">
+            </video>
+
+            <!-- Ninad -->
+            <img src="gallery/gallery_img/27.jpg" class="gallery-item ninad rounded-4 m-2" width="300" height="300">
+            <img src="gallery/gallery_img/10.jpeg" class="gallery-item ninad rounded-4 m-2" width="300" height="300">
+
+            <!-- Technova -->
+            <img src="gallery/gallery_img/11.jpeg" class="gallery-item technova rounded-4 m-2" width="300" height="300">
+            <img src="gallery/gallery_img/12.jpeg" class="gallery-item technova rounded-4 m-2" width="300" height="300">
+            <img src="gallery/gallery_img/13.jpeg" class="gallery-item technova rounded-4 m-2" width="300" height="300">
+            <img src="gallery/gallery_img/14.jpeg" class="gallery-item technova rounded-4 m-2" width="300" height="300">
+            <img src="gallery/gallery_img/15.jpeg" class="gallery-item technova rounded-4 m-2" width="300" height="300">
+            <img src="gallery/gallery_img/16.jpeg" class="gallery-item technova rounded-4 m-2" width="300" height="300">
+            <img src="gallery/gallery_img/17.jpeg" class="gallery-item technova rounded-4 m-2" width="300" height="300">
+            <img src="gallery/gallery_img/18.jpeg" class="gallery-item technova rounded-4 m-2" width="300" height="300">
+            <img src="gallery/gallery_img/19.jpeg" class="gallery-item technova rounded-4 m-2" width="300" height="300">
+
+            <!-- Innovation -->
+            <img src="gallery/gallery_img/21.jpeg" class="gallery-item innovation rounded-4 m-2" width="300" height="300">
+            <img src="gallery/gallery_img/22.jpeg" class="gallery-item innovation rounded-4 m-2" width="300" height="300">
+            <img src="gallery/gallery_img/23.jpeg" class="gallery-item innovation rounded-4 m-2" width="300" height="300">
+
+            <!-- Fort -->
+            <img src="gallery/gallery_img/24.jpeg" class="gallery-item fort rounded-4 m-2" width="300" height="300">
+            <img src="gallery/gallery_img/25.jpeg" class="gallery-item fort rounded-4 m-2" width="300" height="300">
+
+            <video class="gallery-item fort rounded-4 m-2" width="300" height="300" controls>
+                <source src="gallery/videos/1.mp4" type="video/mp4">
+            </video>
+
+            <!-- Seminar -->
+            <img src="gallery/gallery_img/26.jpeg" class="gallery-item seminar rounded-4 m-2" width="300" height="300">
+            <img src="gallery/gallery_img/15.jpeg" class="gallery-item seminar rounded-4 m-2" width="300" height="300">
+
+        </section>
+    </div>
+
+</body>
+
+</html>
