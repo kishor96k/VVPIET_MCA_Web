@@ -1,39 +1,252 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Courses</title>
+    <meta charset="UTF-8">
+    <title>Courses Offered</title>
+
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <div class="container mt-5">
-        <h2 class="text-center">Courses Offered</h2>
-        <div class="row mt-4">
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5>BCA</h5>
-                        <p>3 Year undergraduate program in computer applications.</p>
-                    </div>
+
+<body class="bg-light">
+
+    <!-- HEADER -->
+    <div class="container-fluid bg-white py-3 shadow-sm">
+        <div class="container">
+            <div class="row align-items-center text-center text-md-start">
+
+                <div class="col-12 col-md-2 mb-2 mb-md-0">
+                    <img src="img/Logo-removebg-preview.png" class="img-fluid" style="max-width: 70px;" alt="logo">
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5>MCA</h5>
-                        <p>Postgraduate program in advanced computing.</p>
-                    </div>
+
+                <div class="col-12 col-md-10">
+                    <p class="mb-1 fw-bold">VIDYA VIKAS PRATISHTHAN's</p>
+                    <h6 class="mb-1 fw-semibold text-uppercase">
+                        V. V. P. Institute of Engineering & Technology, Solapur
+                    </h6>
+                    <p class="mb-0 text-success fw-semibold">NAAC ACCREDITED</p>
+                    <p class="mb-0 small text-muted">ISO 9001:2015 Certified Institute</p>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5>MCA </h5>
-                        <p>Master Of Computer Applications.</p>
-                    </div>
-                </div>
+
             </div>
         </div>
     </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">VVPIET</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto text-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Department
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="/department/hod.html">HOD</a></li>
+                            <li><a class="dropdown-item" href="/department/faculty.html">Faculty</a></li>
+                            <li><a class="dropdown-item" href="/department/syllabus.html">Syllabus</a></li>
+                            <li><a class="dropdown-item" href="/department/feeStructure.html">Fee Structure</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">Courses</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="admissions.html">Admissions</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container mt-5 text-dark">
+        <h2 class="text-center mb-4 mt-6">Courses Offered</h2>
+        <h6 class="mb-4">College, We offer a variety of programs designed to equip students with the knowledge and
+            skills needed to
+            succeed in their academic and professional careers. Whether you’re starting your journey with us in pursuing
+            advanced degrees in Bachelor of Computer Applications (B.C.A.), Master of Computer Applications (M.C.A.)
+            (Computer Science), We have specific programs for you.</h6>
+
+
+        <!-- IMPORTANT: Accordion wrapper -->
+        <div class="accordion" id="accordionParent">
+
+            <div class="row">
+
+                <!-- Section 1 -->
+                <div class="col-md-6">
+                    <div class="card shadow-sm">
+                        <h2 class="text-center text-dark mt-4">B.C.A</h2>
+                        <h3 class="text-center text-dark"> Bachelor of Computer Applications </h3>
+                        <p class="text-center text-dark">3 Year undergraduate program (Under AICTE)</p>
+                        <div class="card-header bg-primary text-white text-center" data-bs-toggle="collapse"
+                            data-bs-target="#one" style="cursor:pointer;">
+                            Know more About BCA
+                        </div>
+
+                        <div id="one" class="collapse" data-bs-parent="#accordionParent">
+                            <div class="card-body">
+                                <h2 class="text-center mb-4">B.C.A. Program Highlights</h2>
+                                <ul class="ps-3">
+                                    <li class="mb-2"><strong>Well-Rounded Curriculum:</strong> Our B.C.A.
+                                        program
+                                        features a well-rounded curriculum that covers key areas such as
+                                        programming languages, software engineering, database management,
+                                        networking and web development. The coursework is designed to
+                                        provide both fundamental and advanced knowledge in computer science.
+                                    </li>
+                                    <li class="mb-2"><strong>Hands-On Learning:</strong> Emphasis is placed
+                                        on practical
+                                        experience through lab work, projects and real-world applications.
+                                        Students gain valuable insights and hands-on experience with the
+                                        latest technologies and industry-standard tools.</li>
+                                    <li class="mb-2"><strong>Industry-Relevant Skills:</strong> The program
+                                        focuses on
+                                        developing critical technical skills and problem-solving abilities,
+                                        preparing graduates for various roles in the IT industry. Topics
+                                        include software development, system analysis and cybersecurity.
+                                    </li>
+                                    <li class="mb-2"><strong>Experienced Faculty:</strong> Our program is
+                                        delivered by a
+                                        team of highly qualified and experienced faculty members who are
+                                        committed to providing quality education and mentorship. They bring
+                                        a wealth of industry experience and academic expertise to the
+                                        classroom.</li>
+                                    <li class="mb-2"><strong>Career Opportunities:</strong> Graduates of the
+                                        B.C.A.
+                                        program are well-prepared for careers in software development, IT
+                                        consulting, system administration and more. The program also
+                                        provides a strong foundation for pursuing advanced studies in
+                                        computer science or related fields.</li>
+                                </ul>
+
+                                <div class="text-center mt-3">
+                                    <button class="btn" style="background-color: rgb(243, 173, 124);">Syllabus &
+                                        Eligibility</button>
+                                    <button class="btn" style="background-color: rgb(243, 173, 124);">Admission
+                                        Process</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2 -->
+                <div class="col-md-6">
+                    <div class="card shadow-sm">
+                        <h2 class="text-center mt-4">M.C.A</h2>
+                        <h3 class="text-center"> Master of Computer Applications </h3>
+                        <p class="text-center">2 Year Postgraduate Program (Under AICTE)</p>
+
+                        <div class="card-header bg-primary text-white text-center" data-bs-toggle="collapse"
+                            data-bs-target="#two" style="cursor:pointer;">
+                            Know more About MCA
+                        </div>
+
+                        <div id="two" class="collapse" data-bs-parent="#accordionParent">
+                            <div class="card-body">
+                                <h2 class="text-center mb-3">M.C.A. Program Highlights</h2>
+                                <ul class="ps-3">
+                                    <li class="mb-2"><strong>Introduction:</strong>
+                                        MCA is a two-year full-time Post Graduate Programme approved
+                                        by AICTE. The course is designed to provide advanced knowledge in
+                                        computer applications,software development, data science,
+                                        networking and emerging technologies. It aims to prepare students for leadership
+                                        roles
+                                        in the IT industry.</li>
+                                    <li class="mb-2"><strong>Duration:</strong> 2 Years, Full-Time
+                                        (AICTE
+                                        Approved)</li>
+                                    <li class="mb-2"><strong>Eligibility:</strong> Graduation in
+                                        relevant
+                                        discipline with
+                                        required entrance criteria</li>
+                                    <li class="mb-2"><strong>Focus Areas:</strong> Advanced Computer
+                                        Applications,
+                                        Software Development, Data Science, Networking, and Emerging
+                                        Technologies</li>
+                                    <li class="mb-2"><strong>Learning Approach:</strong> Classroom
+                                        teaching,
+                                        practical
+                                        labs, projects, seminars and industry exposure</li>
+                                    <li class="mb-2"><strong>Career Opportunities:</strong> Software
+                                        Developer,
+                                        System
+                                        Analyst, Data Scientist, IT Consultant, Researcher, and more
+                                    </li>
+                                    <li class="mb-2"><strong>Extra Edge:</strong> Placement support,
+                                        skill
+                                        development
+                                        courses and hands-on training with modern tools</li>
+                                    <li class="mb-2"><strong>Scope of Placement:</strong> The MCA
+                                        program opens doors to a wide range of career opportunities in the IT industry,
+                                        including roles such as: Software Developer / Engineer, System Analyst,
+                                        Database Administrator, Web & Mobile Application Developer, Data
+                                        Scientist / AI Specialist, IT Consultant.</li>
+
+                                    <div class="text-center mt-3">
+                                        <button class="btn" style="background-color: rgb(243, 173, 124);">Syllabus &
+                                            Eligibility</button>
+                                        <button class="btn" style="background-color: rgb(243, 173, 124);">Admission
+                                            Process</button>
+                                    </div>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="text-center">
+        <a href="https://www.aicte.gov.in/schemes/students-development-schemes"><button class="btn m-4 p-3 
+            " style="background-color: #007bff; color: white;">Click Here for AICTE Scholarship/Fellowship
+                Schemes</button></a>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+        <p class="mb-0">© 2026 VVPIET College | All Rights Reserved</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
+
 </html>
