@@ -6,3 +6,17 @@ body {
     transform: scale(1.05);
     transition: 0.3s;
 }
+
+.btn {
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
